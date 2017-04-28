@@ -50,32 +50,35 @@ engineers = '{url}/engineers'.format(url=base_url)
 activity = '{url}/activity'.format(url=base_url)
 contribution = '{url}/contribution'.format(url=base_url)
 
-company = 'ibm'
 releases = [
-           'austin',
-           'bexar',
-           'cactus',
-           'diablo',
-           'essex',
-           'folsom',
-           'grizzly',
-           'havana',
-           'icehouse',
-           'juno',
-           'kilo',
-           'liberty',
-           'mitaka',
-           'newton',
-           'ocata',
-           'pike',
-           'queens'
+            'austin',
+            'bexar',
+            'cactus',
+            'diablo',
+            'essex',
+            'folsom',
+            'grizzly',
+            'havana',
+            'icehouse',
+            'juno',
+            'kilo',
+            'liberty',
+            'mitaka',
+            'newton',
+            'ocata',
+            'pike',
+            'queens'
            ]
 
+"""
+Change these to your company and team's launchpad ids
+"""
+company = 'yourcompany'
 launchpad_ids = [
-                'krtaylor', 
-                'mjturek', 
-                'edleafe', 
-                'mlavalle'
+                 'id1', 
+                 'id2', 
+                 'id3', 
+                 'id4'
                 ]
 
 def get_release( releases ):
