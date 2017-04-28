@@ -1,0 +1,13 @@
+
+What is it?
+===========
+Just a simple tool I wrote as an exercise to gather review stats
+from the Stackalytics API, filtering on company and user.
+
+How do you use it?
+==================
+First, edit the code to change the company to the one you are interested in.
+Next, edit the launchpad users to be valid users for your company.
+
+run with ./reviews.py
+supply the release that you would like to gather stats on.
