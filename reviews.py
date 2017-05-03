@@ -51,46 +51,46 @@ activity = '{url}/activity'.format(url=base_url)
 contribution = '{url}/contribution'.format(url=base_url)
 
 releases = [
-            'austin',
-            'bexar',
-            'cactus',
-            'diablo',
-            'essex',
-            'folsom',
-            'grizzly',
-            'havana',
-            'icehouse',
-            'juno',
-            'kilo',
-            'liberty',
-            'mitaka',
-            'newton',
-            'ocata',
-            'pike',
-            'queens'
-           ]
+    'austin',
+    'bexar',
+    'cactus',
+    'diablo',
+    'essex',
+    'folsom',
+    'grizzly',
+    'havana',
+    'icehouse',
+    'juno',
+    'kilo',
+    'liberty',
+    'mitaka',
+    'newton',
+    'ocata',
+    'pike',
+    'queens',
+]
 
 """
 Change these to your company and team's launchpad ids
 """
 company = 'yourcompany'
 launchpad_ids = [
-                 'id1', 
-                 'id2', 
-                 'id3', 
-                 'id4'
-                ]
+    'id1', 
+    'id2', 
+    'id3', 
+    'id4',
+]
 
 def get_release( releases ):
     print(" ".join(rel for rel in releases))
-    print('Enter the review stats release name in lower case '
-          + '(for example: ocata): ')
+    print('Enter the review stats release name (for example: ocata): ')
     while True:
-        release = raw_input('')
+        release = raw_input('').lower()
         if release in releases:
             break
         else:
-            print('{typo} is not a valid release, try again'.format(typo=release))
+            print('{typo} is not a valid release, '
+                  'try again'.format(typo=release))
     return release
 
 def get_engineers( release ):
